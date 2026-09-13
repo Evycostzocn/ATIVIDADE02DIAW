@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha conta - PUC Minas</title>
+    <link rel="stylesheet" th:href="@{/css/login.css}">
+</head>
+<body>
+<main class="container">
+    <section class="card">
+        <div class="branding"><img th:src="@{/images/PUC_Brasao.jpg}" alt="Brasão PUC Minas" class="brasao"></div>
+        <div class="form-container">
+            <h1>Minha conta</h1>
+            <p>Olá, <strong th:text="${nome}"></strong>!</p>
+            <p>Você está conectado com <span th:text="${email}"></span>.</p>
+            <form th:action="@{/logout}" method="post"><button type="submit" class="btn">Sair</button></form>
+        </div>
+    </section>
+</main>
+</body>
+</html>

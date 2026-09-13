@@ -17,13 +17,16 @@
 
         <div class="form-container">
             <h1>Login</h1>
-            <form>
+            <p class="message error" th:if="${param.error}">Email ou senha inválidos.</p>
+            <p class="message success" th:if="${param.registered}">Cadastro realizado! Entre com seu email e senha.</p>
+            <p class="message success" th:if="${param.logout}">Você saiu da sua conta.</p>
+            <form th:action="@{/login}" method="post">
                 <div class="input-group">
-                    <input type="text" id="username" name="username" placeholder="Usuário" required>
+                    <input type="email" id="email" name="email" placeholder="Email" aria-label="Email" autocomplete="username" required>
                 </div>
 
                 <div class="input-group">
-                    <input type="password" id="senha" name="senha" placeholder="Senha" required>
+                    <input type="password" id="senha" name="senha" aria-label="Senha" autocomplete="current-password" placeholder="Senha" required>
                 </div>
 
                 <button type="submit" class="btn">
@@ -32,13 +35,25 @@
             </form>
 
             <div class="switch-form">
+                <p>Esqueceu sua senha?</p>
+
+                <a th:href="@{/recoverpassword}">
+                    Recuperar senha
+                </a>
+            </div>
+
+            <div class="switch-form">
                 <p>Ainda não tem cadastro?</p>
 
                 <a th:href="@{/register}">
                     Cadastre-se
                 </a>
             </div>
+
+
         </div>
     </section>
 </main>
 </body>
+
+</html>

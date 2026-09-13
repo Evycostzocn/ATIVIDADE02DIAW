@@ -299,3 +299,10 @@ body {
 }
 
 
+
+/* Mensagens e identificação dos campos */
+.input-group label { display: block; margin-bottom: 5px; }
+.message { padding: 12px; margin-bottom: 16px; border-radius: 8px; }
+.error { background: #fff0f0; color: #8b1515; }
+.success { background: #e8f6ec; color: #145b2a; }
+.form-container { min-width: 0; overflow-wrap: anywhere; }

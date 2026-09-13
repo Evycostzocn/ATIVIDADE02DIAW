@@ -1,2 +1,5 @@
-/home/evelyncosta/Documents/PESSOAL/DIAW/LoginThymeleaf/src/main/java/com/example/LoginThymeleaf/LoginThymeleafApplication.java
-/home/evelyncosta/Documents/PESSOAL/DIAW/LoginThymeleaf/src/main/java/com/example/LoginThymeleaf/controller/LoginThymeleafController.java
+/home/evelyncosta/Documents/PESSOAL/DIAW/LoginThymeleaf/ATIVIDADE02DIAW/src/main/java/com/example/LoginThymeleaf/LoginThymeleafApplication.java
+/home/evelyncosta/Documents/PESSOAL/DIAW/LoginThymeleaf/ATIVIDADE02DIAW/src/main/java/com/example/LoginThymeleaf/config/SecurityConfig.java
+/home/evelyncosta/Documents/PESSOAL/DIAW/LoginThymeleaf/ATIVIDADE02DIAW/src/main/java/com/example/LoginThymeleaf/controller/LoginThymeleafController.java
+/home/evelyncosta/Documents/PESSOAL/DIAW/LoginThymeleaf/ATIVIDADE02DIAW/src/main/java/com/example/LoginThymeleaf/model/RegisterForm.java
+/home/evelyncosta/Documents/PESSOAL/DIAW/LoginThymeleaf/ATIVIDADE02DIAW/src/main/java/com/example/LoginThymeleaf/service/UserService.java

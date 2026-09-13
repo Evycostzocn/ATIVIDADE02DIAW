@@ -1,2 +1,5 @@
 com/example/LoginThymeleaf/LoginThymeleafApplication.class
 com/example/LoginThymeleaf/controller/LoginThymeleafController.class
+com/example/LoginThymeleaf/service/UserService.class
+com/example/LoginThymeleaf/config/SecurityConfig.class
+com/example/LoginThymeleaf/model/RegisterForm.class
