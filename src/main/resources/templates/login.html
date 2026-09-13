@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="pt-BR">
 <head>
-    <!-- Infos sobre o documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Thymeleaf</title>
-    <link rel="stylesheet" th:href="@{/css/login.css}">
+    <title>Login - PUC Minas</title>
+    <link rel="stylesheet"
+          th:href="@{/css/login.css}">
 </head>
+
 <body>
-    <div class="login-container">
-        <div class="imagem-login">
-            <img th:src="@{/images/centralgarden.jpeg}" alt="Central Garden">
+<main class="container">
+    <section class="card">
+        <div class="branding">
+            <img th:src="@{/images/PUC_Brasao.jpg}" alt="Brasão PUC Minas" class="brasao">
         </div>
-        <div class="login-form">
-            <div class="imagem-brasao">
-                <img th:src="@{/images/brasaopuc.jpeg}" alt="Brasão da PUC">
-            </div>
-            <form th:action="@{/login}" method="post" class="login-form">
-                <input type="text" id="username" name="username" placeholder="Usuário" required>
-                <input type="password" id="password" name="password" placeholder="Senha" required>
-                <div class="login-button">
-                    <button type="submit">Entrar</button>
+
+        <div class="form-container">
+            <h1>Login</h1>
+            <form th:action="@{/login}" method="post">
+                <div class="input-group">
+                    <input type="text" id="username" name="username" placeholder="Usuário" required>
                 </div>
-                <p class="login-forgot-password">
-                    Ainda não tem cadastro? <br>
-                    <a href="/register">Cadastre-se</a>
-                    <a href="/recoverpassword">Esqueceu a senha?</a>
-                </p>
+
+                <div class="input-group">
+                    <input type="password" id="senha" name="senha" placeholder="Senha" required>
+                </div>
+
+                <button type="submit" class="btn">
+                    Entrar
+                </button>
             </form>
+
+            <div class="switch-form">
+                <p>Ainda não tem cadastro?</p>
+
+                <a th:href="@{/register}">
+                    Cadastre-se
+                </a>
+            </div>
         </div>
-    </div>
+    </section>
+</main>
 </body>
-</html>
