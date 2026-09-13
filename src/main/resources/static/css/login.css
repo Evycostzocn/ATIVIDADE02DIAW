@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.imagem-login {
+    display: flex;
+    width: 580px;
+    height: 480px;
+    
+}
+
+.login-container {
+    padding: 15px;
+    margin: 0px;
+    border-radius: 10px;
+    display: flex;
+}
+
+
